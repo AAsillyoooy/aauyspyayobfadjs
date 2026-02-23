@@ -3,7 +3,7 @@
 - feat(cloud): 添加云盘上传模式选择功能并优化上传配置 (#116)
 - refactor: Refactor random Chinese IP generator (#110)
 - fix(server): Correctly inject client IP into request parameters (#108)
-- 更加优雅的显示URL和调试按钮 (#109)
+- refactor(ui): More elegant display of URL and debug buttons (#109)
 
 ### 4.30.1 | 2026.02.11
 - feat: Add user playlist endpoints & domain overrides (#105)

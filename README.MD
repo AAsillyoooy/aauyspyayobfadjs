@@ -1,4 +1,7 @@
-# 网易云音乐 API Enhanced
+<div align="center">
+  <h2>网易云音乐 API Enhanced</h2>
+  <p>网易云音乐第三方 Node.js API，基于停更的原版 API 持续维护，支持丰富的音乐相关接口，适合自建服务、二次开发和多平台部署(如果原版诈尸, 我会及时同步 or 归档)。</p>
+</div>
 
 ---
 
@@ -204,7 +207,7 @@ pnpm test
 | Java   | [JackuXL](https://github.com/JackuXL)       | [NeteaseCloudMusicApi-SDK](https://github.com/JackuXL/NeteaseCloudMusicApi-SDK)          | 第三方 |
 | Java   | [1015770492](https://github.com/1015770492) | https://github.com/1015770492/yumbo-music-utils                                          | 第三方 |
 | Python | [盧瞳](https://github.com/2061360308)         | [NeteaseCloudMusic_PythonSDK](https://github.com/2061360308/NeteaseCloudMusic_PythonSDK) | 第三方 |
-| Swift  | [Lincb](https://github.com/Lincb522/)  | [NeteaseCloudMusicApi-Swift](https://github.com/Lincb522/NeteaseCloudMusicAPI-Swift)     | 第三方 |
+| Swift  | [Lincb522](https://github.com/Lincb522)  | [NeteaseCloudMusicApi-Swift](https://github.com/Lincb522/NeteaseCloudMusicAPI-Swift)     | 第三方 |
 
 
 ### 依赖此项目的优秀开源项目
@@ -212,6 +215,10 @@ pnpm test
 - [imsyy/splayer](https://github.com/imsyy/splayer)
 
 - [qier2222/YesPlayMusic](https://github.com/qier222/YesPlayMusic)
+
+- [MaigoLabs/amaoke.app](https://github.com/MaigoLabs/amaoke.app)
+
+- [Yueby/music-together](https://github.com/Yueby/music-together)
 
 ## License
 
