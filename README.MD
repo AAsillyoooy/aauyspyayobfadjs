@@ -1,13 +1,38 @@
-<div align="center">
-  <h2>网易云音乐 API Enhanced</h2>
-  <p>网易云音乐第三方 Node.js API，基于停更的原版 API 持续维护，支持丰富的音乐相关接口，适合自建服务、二次开发和多平台部署(如果原版诈尸, 我会及时同步 or 归档)。</p>
-</div>
+<p align="center">
+  <img src="./public/docs/netease.png" alt="网易云音乐 API Enhanced Logo" width="120" height="120" />
+</p>
 
----
+<h1 align="center">NeteaseCloudMusicAPI Enhanced</h1>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@neteasecloudmusicapienhanced/api">
+    <img src="https://img.shields.io/npm/v/@neteasecloudmusicapienhanced/api?style=flat-square" alt="NPM Version" />
+  </a>
+  <a href="https://www.npmjs.com/package/@neteasecloudmusicapienhanced/api">
+    <img src="https://img.shields.io/npm/dm/@neteasecloudmusicapienhanced/api?style=flat-square" alt="NPM Downloads" />
+  </a>
+  <a href="https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced">
+    <img src="https://img.shields.io/github/license/NeteaseCloudMusicApiEnhanced/api-enhanced?style=flat-square" alt="License" />
+  </a>
+  <a href="https://nodejs.org/">
+    <img src="https://img.shields.io/node/v/@neteasecloudmusicapienhanced/api?style=flat-square" alt="Node Version" />
+  </a>
+  <a href="https://hub.docker.com/r/moefurina/ncm-api">
+    <img src="https://img.shields.io/docker/v/moefurina/ncm-api?style=flat-square" alt="Docker Version" />
+  </a>
+  <a href="https://hub.docker.com/r/moefurina/ncm-api">
+    <img src="https://img.shields.io/docker/pulls/moefurina/ncm-api?style=flat-square" alt="Docker Pulls" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square&logo=typescript" alt="TypeScript" />
+  </a>
+</p>
+
+
 
 ## 项目简介
 
-本项目为网易云音乐第三方 Node.js API，基于停更的原版 API 持续维护，支持丰富的音乐相关接口，适合自建服务、二次开发和多平台部署(如果原版诈尸, 我会及时同步 or 归档)。
+网易云音乐第三方 Node.js API, 支持丰富的音乐相关接口，适合自建服务、二次开发和多平台部署(如果原版诈尸, 我会及时同步 or 归档)。
 
 > [!IMPORTANT]
 >
