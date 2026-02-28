@@ -1718,6 +1718,30 @@ tags: 歌单标签
 
 **调用例子 :** `/comment/info/list?type=0&ids=186016,347230`
 
+**返回数据 :**
+
+```json
+{
+  "data": [
+    {
+      "latestLikedUsers": null,
+      "liked": false,
+      "comments": null,
+      "resourceType": 4,
+      "resourceId": 186016,
+      "commentUpgraded": false,
+      "musicianSaidCount": 0,
+      "commentCountDesc": "100w+",
+      "likedCount": 347,
+      "commentCount": 1970844,
+      "shareCount": 109721,
+      "threadId": "R_SO_4_186016"
+    }
+  ],
+  "code": 200
+}
+```
+
 ### 热门评论
 
 说明 : 调用此接口 , 传入 type, 资源 id 可获得对应资源热门评论 ( 不需要登录 )
@@ -1755,30 +1779,6 @@ tags: 歌单标签
 **接口地址 :** `/comment/hot`
 
 **调用例子 :** `/comment/hot?id=186016&type=0`
-
-**返回数据 :**
-
-```json
-{
-  "data": [
-    {
-      "latestLikedUsers": null,
-      "liked": false,
-      "comments": null,
-      "resourceType": 4,
-      "resourceId": 186016,
-      "commentUpgraded": false,
-      "musicianSaidCount": 0,
-      "commentCountDesc": "100w+",
-      "likedCount": 347,
-      "commentCount": 1970844,
-      "shareCount": 109721,
-      "threadId": "R_SO_4_186016"
-    }
-  ],
-  "code": 200
-}
-```
 
 ### 新版评论接口
 
