@@ -1712,7 +1712,7 @@ tags: 歌单标签
 7: 电台
 ```
 
-`ids`: 资源 id 列表 , 多个 id 用逗号分隔 , 如 `123,456`
+`ids`: 资源 id 列表 , 多个 id 用逗号分隔 , 如 `186016,347230`
 
 **接口地址 :** `/comment/info/list`
 
@@ -1755,6 +1755,30 @@ tags: 歌单标签
 **接口地址 :** `/comment/hot`
 
 **调用例子 :** `/comment/hot?id=186016&type=0`
+
+**返回数据 :**
+
+```json
+{
+  "data": [
+    {
+      "latestLikedUsers": null,
+      "liked": false,
+      "comments": null,
+      "resourceType": 4,
+      "resourceId": 186016,
+      "commentUpgraded": false,
+      "musicianSaidCount": 0,
+      "commentCountDesc": "100w+",
+      "likedCount": 347,
+      "commentCount": 1970844,
+      "shareCount": 109721,
+      "threadId": "R_SO_4_186016"
+    }
+  ],
+  "code": 200
+}
+```
 
 ### 新版评论接口
 
@@ -2815,12 +2839,14 @@ type : 地区
 **1. 后端代理模式 (默认)**
 
 文件通过服务器转发到云存储,调用简单,但受服务器限制:
+
 - Vercel Serverless Functions 限制请求体大小为 4.5MB
 - 自建服务器需配置足够大的请求体限制
 
 **2. 客户端直传模式 (推荐用于 Vercel)**
 
 文件直接从客户端上传到云存储服务器,绕过服务器限制:
+
 - 支持大文件上传
 - 适合 Vercel、Netlify 等有请求体限制的平台
 - 需要前端配合实现
@@ -2832,12 +2858,14 @@ type : 地区
 **接口地址 :** `/cloud/upload/token`
 
 **必选参数 :**
+
 - `cookie`: 网易云音乐 Cookie (在请求体中传递)
 - `md5`: 文件 MD5 值
 - `fileSize`: 文件大小(字节)
 - `filename`: 文件名
 
 **返回数据 :**
+
 ```json
 {
   "code": 200,
@@ -2856,6 +2884,7 @@ type : 地区
 **接口地址 :** `/cloud/upload/complete`
 
 **必选参数 :**
+
 - `cookie`: 网易云音乐 Cookie (在请求体中传递)
 - `songId`: 歌曲 ID
 - `resourceId`: 资源 ID
@@ -2863,6 +2892,7 @@ type : 地区
 - `filename`: 文件名
 
 **可选参数 :**
+
 - `song`: 歌曲名
 - `artist`: 艺术家
 - `album`: 专辑名
@@ -2890,6 +2920,7 @@ type : 地区
 **调用例子 :** `/cloud/match?uid=32953014&sid=aaa&asid=bbb` `/cloud/match?uid=32953014&sid=bbb&asid=0`
 
 ### 获取云盘歌词
+
 说明: 调用此接口, 获取云盘歌曲的歌词，歌词来自此文件的音乐元数据`LYRICS`标签。
 
 **可选参数 :**
@@ -4983,12 +5014,11 @@ let data = encodeURIComponent(
 
 **调用例子:** `/vip/sign/info`
 
-
 ### 用户的创建歌单列表
 
 说明 : 调用此接口, 传入用户id, 获取用户的创建歌单列表
 
-**必选参数 :**  
+**必选参数 :**
 
 `uid`: 用户 id
 
@@ -5006,7 +5036,7 @@ let data = encodeURIComponent(
 
 说明 : 调用此接口, 传入用户id, 获取用户的收藏歌单列表
 
-**必选参数 :**  
+**必选参数 :**
 
 `uid`: 用户 id
 
